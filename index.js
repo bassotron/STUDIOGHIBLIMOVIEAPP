@@ -17,10 +17,11 @@ function getMovies() {
         .then(data => {
             data.forEach(movie => {
                 ul.innerHTML += `
-                 <li><a href= "#" data-id= ${movie.id}> ${movie.title}</li>`
+                 <li><a href= "#" data-id=${movie.id}>${movie.title}</li>`
             })
+            clickLinkEvent()
         })
-    clickLinkEvent()
+
 }
 
 const clickLinkEvent = () => {
@@ -32,5 +33,25 @@ const clickLinkEvent = () => {
 
 
 const showMovieInfo = (event) => {
-    console.log(event.target.dataset.id)
+    const main = document.getElementById('main')
+    const ul = document.getElementById('movie-list')
+    ul.innerHTML = ''
+
+
+}
+
+function getDirector() {
+
+    let ul = document.getElementById('myDropdown')
+
+    fetch('https://ghibliapi.herokuapp.com/films')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(movie => {
+                ul.innerHTML += `
+                 <li><a href= "#" data-id=${movie.id}>${movie.director}</li>`
+            })
+            clickDropdownEvent()
+        })
+
 }
