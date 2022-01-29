@@ -1,3 +1,6 @@
+baseURL = 'https://ghibliapi.herokuapp.com/films'
+
+
 window.addEventListener('DOMContentLoaded', () => {
     // get movies and execute
     getMovies()
@@ -15,9 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function getMovies() {
 
     const ul = document.getElementById('movie-list')
-    const main = document.getElementById('main')
-    ul.innerHTML = ''
-    main.innerHTML = ''
+
     fetch('https://ghibliapi.herokuapp.com/films')
         .then(response => response.json())
         .then(data => {
@@ -39,25 +40,23 @@ const clickLinkEvent = () => {
 
 
 const showMovieInfo = (event) => {
+    console.log(event.target.dataset.id)
     const main = document.getElementById('main')
     const ul = document.getElementById('movie-list')
     ul.innerHTML = ''
-
-
-}
-
-function returnToMovies() {
-
-    let ul = document.getElementById('mybtn')
-
-
-    fetch('https://ghibliapi.herokuapp.com/films')
+    fetch(`https://ghibliapi.herokuapp.com 
+                `)
         .then(response => response.json())
         .then(data => {
-            data.forEach(movie => {
+            data => {
+                console.log(data)
+            }
 
-            })
 
         })
-    document.addEventListener('click', getMovies)
+}
+
+function returnToMovies(event) {
+    const button = document.getElementsByClassName("btn")
+    button.addEventListener('click', event)
 }
