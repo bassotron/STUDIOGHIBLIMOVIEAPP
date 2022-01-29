@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
-    <script src="/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 
     <title>STUDIO GHIBLI APP</title>
 </head>
@@ -15,9 +15,9 @@
     <div id="nav">
         <p>WELCOME TO THE STUDIO GHIblI MOVIE DATABASE</p>
 
-        <div class="dropdown">
-            <button onclick="clickDropdownEvent()" class=" dropbtn ">Movie  By Director</button>
-            <div id="myDropdown " class="dropdown-content ">
+        <div class="button">
+            <button onclick="returnToMovies()" class="btn">Return to Movies</button>
+            <div id="mybtn" class="button-content">
                 <a href="#"></a>
 
             </div>
@@ -26,7 +26,7 @@
 
         <div id="main ">
 
-            <ul id="movie-list ">
+            <ul id="movie-list">
 
             </ul>
 
@@ -37,28 +37,9 @@
 
 
 
-        <!-- FOOTER -->
 
-        <footer class=" page-footer ">
-            <div class="container ">
-                <div class="row ">
-                    <div class="col l6 s12 ">
-                        <h5 class="white-text ">A BASSOTRON APPLICATION</h5>
 
-                    </div>
-                    <div class="col l4 offset-l2 s12 ">
-                        <h5 class="white-text "></h5>
 
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright ">
-                <div class="container ">
-                    © 2022 Copyright WILL LOVELL
-                    <a class="grey-text text-lighten-4 right " href="# "></a>
-                </div>
-            </div>
-        </footer>
 
 </body>
 

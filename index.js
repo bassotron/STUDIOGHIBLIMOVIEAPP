@@ -6,12 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
 })
+
+
 
 function getMovies() {
 
-    let ul = document.getElementById('movie-list')
-
+    const ul = document.getElementById('movie-list')
+    const main = document.getElementById('main')
+    ul.innerHTML = ''
+    main.innerHTML = ''
     fetch('https://ghibliapi.herokuapp.com/films')
         .then(response => response.json())
         .then(data => {
@@ -40,36 +46,18 @@ const showMovieInfo = (event) => {
 
 }
 
-function getDirector() {
+function returnToMovies() {
 
-    let ul = document.getElementById('myDropdown')
+    let ul = document.getElementById('mybtn')
+
 
     fetch('https://ghibliapi.herokuapp.com/films')
         .then(response => response.json())
         .then(data => {
             data.forEach(movie => {
-                ul.innerHTML += `
-                 <li><a href= "#" data-id=${movie.id}>${movie.director}</li>`
+
             })
-            clickDropdownEvent()
+
         })
-
-}
-
-function clickDropdownEvent() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
+    document.addEventListener('click', getMovies)
 }
