@@ -2,9 +2,15 @@ baseURL = 'https://ghibliapi.herokuapp.com/films'
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    // get movies and execute
-    document.getElementById('myButton').addEventListener('click', getMovies)
-    getMovies();
+
+    // get movies  on the page
+    getMovies()
+
+
+    // event listener for return to movies button
+    document.getElementById("myButton").addEventListener('click', getMovies)
+
+
 
 })
 
@@ -46,9 +52,5 @@ const showMovieInfo = (event) => {
                  <p> ${data.description} </p><br>
                   <h4>DIRECTOR: ${data.director} </h4>`
         })
-}
-
-function returnToMovies(event) {
-    const button = document.getElementsById("btn")
-    button.addEventListener('click', event)
+    document.getElementById("myButton").addEventListener('click', getMovies)
 }
