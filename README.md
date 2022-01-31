@@ -1,3 +1,8 @@
+# Studio Ghibli Movie App
+
+This application uses the API https://ghibliapi.herokuapp.com/films
+to list the movies made by Studio Ghibli and allows the user to click on a 
+specific movie to retrieve more information about each movie. 
 
 
 
@@ -5,35 +10,45 @@
 
 
 
+## Appendix
+
+Any additional information goes here
 
 
+## Authors
+
+- Will Lovell[@bassotron](https://github.com/bassotron)
 
 
+## Demo
+
+Insert gif or link to demo
 
 
+## Documentation
+
+[Documentation](https://linktodocumentation)
 
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 
+## Run Locally
 
-MIT License
+Clone the project
 
-Copyright (c) [year] [fullname]
+```bash
+  git clone https://link-to-project
+```
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Go to the project directory
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+```bash
+  cd 
+```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```bash
+open index.html
+
