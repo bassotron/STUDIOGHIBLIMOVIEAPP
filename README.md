@@ -2,7 +2,9 @@
 
 This application uses the API https://ghibliapi.herokuapp.com/films
 to list the movies made by Studio Ghibli and allows the user to click on a 
-specific movie to retrieve more information about each movie. 
+specific movie to retrieve more information about each movie. This application is run on a single html file and does not use redirects. 
+
+
 
 ## Demo
 
@@ -39,13 +41,13 @@ Any additional information goes here
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/bassotron/STUDIOGHIBLIMOVIEAPP.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd 
+  cd  STUDIOGHIBLIMOVIEAPP
 ```
 
 ```bash
