@@ -4,9 +4,15 @@ This application uses the API https://ghibliapi.herokuapp.com/films
 to list the movies made by Studio Ghibli and allows the user to click on a 
 specific movie to retrieve more information about each movie. 
 
+## Demo
 
 
+![](giphy.gif)
 
+## Lessons Learned
+
+I learned how to combine my knowledge of vanilla javascript/ html/ and css to create an interactive web application.
+I learned how to manipulate the DOM using information from an API to display the information I wanted to display. 
 
 
 
@@ -20,14 +26,7 @@ Any additional information goes here
 - Will Lovell[@bassotron](https://github.com/bassotron)
 
 
-## Demo
 
-Insert gif or link to demo
-
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
 
 
 ## License
