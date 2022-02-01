@@ -55,14 +55,14 @@ const clickLinkEvent = () => {
 
 const showMovieInfo = (event) => {
 
-    const main = document.getElementById('main')
+    const movieDetail = document.getElementById('movie-detail')
     const ul = document.getElementById('movie-list')
     ul.innerHTML = ''
     fetch('https://ghibliapi.herokuapp.com/films/' + `${event.target.dataset.id}`)
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            main.innerHTML = `<h1>${data.title}</h1><br>
+            movieDetail.innerHTML = `<h1>${data.title}</h1><br>
             <h2>${data.original_title}</h2><br>
                  <img src =${data.image} alt= ${data.title} width="500 height="600"> <br>
                  <h3>DESCRIPTION</h3><br>
@@ -79,8 +79,10 @@ const showMovieInfo = (event) => {
 }
 
 function returnToMovies() {
-
-    window.location.reload(true)
+    const movieDetail = document.getElementById('movie-detail')
+    movieDetail.innerHTML = ""
+        // window.location.reload(true)
+    getMovies()
 }
 
 document.getElementById('myButton').addEventListener('click', returnToMovies)
