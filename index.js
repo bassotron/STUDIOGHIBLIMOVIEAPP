@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM FULLY LOADED")
         // get movies on the page
+
+    sayHello()
     getMovies()
 
 
@@ -82,3 +84,14 @@ function returnToMovies() {
 }
 
 document.getElementById('myButton').addEventListener('click', returnToMovies)
+
+function sayHello() {
+    let person = prompt("Hello! What is your name?")
+    if (person != null) {
+        document.getElementById('greeting').innerHTML =
+
+            "Hello  " + person +
+            "!   WELCOME TO THE STUDIO GHIBLI MOVIE DATABASE"
+    }
+
+}
